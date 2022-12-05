@@ -7,10 +7,10 @@ The project compiles to an executable that changes the background image everytim
 
 # Installation and use
 
-- Download the latest zip file from the [releases](https://github.com/Zokalyx/wtbgc/releases) section.
-- Extract the `wtgbc` folder and move it to your desired directory.
-- [Optional] Modify [`config.toml`](#optional-configuration) if necessary.
-- Put your background pictures into the `backgrounds/` directory.
+- Download the latest zip file from the [releases](https://github.com/Zokalyx/wtbgc/releases) section
+- Extract the `wtgbc` folder and move it to your desired directory
+- [Optional] Modify [`config.toml`](#optional-configuration) if necessary
+- Put your background pictures into the `backgrounds/` directory
 
 # Recommended setup
 
@@ -70,6 +70,7 @@ This will allow you to type `wtgbc` in the terminal to update the image.
 
 # Issues
 
+- Allow CLI argument to specify image
 - Change executable name to something more comfortable
 - Add absolute path support for backgrounds and backups
 - Add optional support for backups
