@@ -70,7 +70,7 @@ This will allow you to type `wtgbc` in the terminal to update the image.
 
 # Issues
 
-- Allow CLI argument to specify image
+- Allow CLI argument to specify an image
 - Change executable name to something more comfortable
 - Add absolute path support for backgrounds and backups
 - Add optional support for backups
@@ -81,4 +81,6 @@ This will allow you to type `wtgbc` in the terminal to update the image.
 - Set timestamps on backup files
 - Create tutorial video/gif for setup
 - Create actual issues :p
+- Improve readability of code
+- Create an option to limit the amount of times the image can change in some time span
 
