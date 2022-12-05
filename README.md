@@ -24,7 +24,7 @@ The other option (explained here) is to execute the program everytime the Window
 - Create a new profile
 - Click on the Command Line option
 - Set it to `powershell -noexit <path>`, where `<path>` is the directory you have in your clipboard
-    - Surround the path in escaped quotes (`\"`) if it contains any whitespace and, prefix it with `&` (example: `powershell -noexit & \"C:\Program Files\wtgbc\wtgbc.exe\"`)
+    - Surround the path in escaped quotes (`\"`) if it contains any whitespace and prefix it with `&` (example: `powershell -noexit & \"C:\Program Files\wtgbc\wtgbc.exe\"`)
     - If using `cmd.exe`, set the command as `cmd /k <path>`
 - Click on Save
 - Go to Startup
