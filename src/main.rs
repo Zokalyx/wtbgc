@@ -7,10 +7,17 @@ use toml;
 
 #[derive(Deserialize)]
 struct Config {
-    pic_dir: Option<String>,
-    allowed_extensions: Option<Vec<String>>,
-    profile_file: Option<String>,
-    backup_dir: Option<String>,
+    backgrounds: Directory,
+    extensions: Vec<String>,
+    wt_profile: String,
+    backups: Directory,
+    mode: String,
+}
+
+#[derive(Deserialize)]
+struct Directory {
+    path: String,
+    absolute: bool,
 }
 
 fn main() {
@@ -19,11 +26,11 @@ fn main() {
 
     let config_file = exe_dir.join("config.toml");
     let config: Config = toml::from_str(&fs::read_to_string(config_file).expect("Couldn't find config.toml!")).unwrap();
-    let profile_file = config.profile_file.
-        unwrap_or(home::home_dir().unwrap().join("AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json").to_str().unwrap().to_string());
-    let pic_dir = config.pic_dir.unwrap_or("backgrounds/".into());
-    let backup_dir = config.backup_dir.unwrap_or(exe_dir.to_str().unwrap().to_string());
-    let allowed_extensions = config.allowed_extensions.unwrap_or(vec!["gif", "png", "jpg", "jpeg"].into_iter().map(|a| a.to_string()).collect());
+
+    let profile_file = home::home_dir().unwrap().join(config.wt_profile);
+    let pic_dir = PathBuf::from(config.backgrounds.path);
+    let backup_dir =exe_dir.join( config.backups.path);
+    let allowed_extensions = config.extensions;
 
     let mut rng = rand::thread_rng();
     let mut new_pic = fs::read_dir(pic_dir).expect("No backgrounds folder found!").into_iter()
