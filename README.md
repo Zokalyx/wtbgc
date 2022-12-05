@@ -3,11 +3,11 @@
 WTBGC (**W**indows **Terminal** **B**ack**g**round **C**ycler) is a tool designed to change the background image of your [Windows Terminal](https://github.com/microsoft/terminal) periodically.
 The project compiles to an executable that changes the background image everytime it's called. It's up to you to decide when to execute the program (see the [recommended setup](#recommended-setup) below).
 
-TODO Image here
+![](demo.jpg)
 
 # Installation and use
 
-- Download the latest zip file from the [releases](TODO) section.
+- Download the latest zip file from the [releases](https://github.com/Zokalyx/wtbgc/releases) section.
 - Extract the `wtgbc` folder and move it to your desired directory.
 - [Optional] Modify [`config.toml`](#optional-configuration) if necessary.
 - Put your background pictures into the `backgrounds/` directory.
@@ -49,11 +49,35 @@ Edit `config.toml` if necessary:
     - WARNING: Currently has no effect
     - Default: `random`
 
-# TODO
+# [Optional] PATH setup
 
+If you want to be able to change the background image on the fly while inside the Windows Terminal,
+it's recommended that you add the executable to your PATH environment variable.
+This will allow you to type `wtgbc` in the terminal to update the image.
+
+- Copy the directory of the executable (example: `C:\tools\wtgbc\\`)
+- Press the Windows key
+- Search for "Environment"
+- Select Modify environment variables
+- Click on Environment Variables
+- Find the PATH entry and click on it
+- Click Edit
+- Click New
+- Paste the directory
+- Click OK until you have closed every window
+- Restart your Windows Terminal
+
+
+# Issues
+
+- Change executable name to something more comfortable
+- Add absolute path support for backgrounds and backups
+- Add optional support for backups
 - Improve error handling
 - Divide code into functions
-- Add "cycle" mode
-- Prevent image from appearing twice in a row
-- Set timestamp on backup files
+- Implement cycle mode
+- Prevent images from appearing twice in a row
+- Set timestamps on backup files
+- Create tutorial video/gif for setup
+- Create actual issues :p
 
