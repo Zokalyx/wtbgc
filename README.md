@@ -55,7 +55,7 @@ If you want to be able to change the background image on the fly while inside th
 it's recommended that you add the executable to your PATH environment variable.
 This will allow you to type `wtgbc` in the terminal to update the image.
 
-- Copy the directory of the executable (example: `C:\tools\wtgbc\\`)
+- Copy the directory of the executable (example: `C:\tools\wtgbc\`)
 - Press the Windows key
 - Search for "Environment"
 - Select Modify environment variables
