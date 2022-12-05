@@ -42,7 +42,7 @@ Edit `config.toml` if necessary:
     - Default: `backups/` (relative)
 - `wt_profile`: Path to the Windows Terminal `config.json`
     - Relative to `$HOME`
-    - Default: `AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json
+    - Default: `AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json`
 - `extensions`: Valid image file extensions
     - Default: `[gif, png, jpg, jpeg]`
 - `mode`: Determines the cycling mode (`random` or `cycle`)
