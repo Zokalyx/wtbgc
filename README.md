@@ -8,7 +8,7 @@ The project compiles to an executable that changes the background image everytim
 # Installation and use
 
 - Download the latest zip file from the [releases](https://github.com/Zokalyx/wtbgc/releases) section
-- Extract the `wtgbc` folder and move it to your desired directory
+- Extract the `wtbgc` folder and move it to your desired directory
 - [Optional] Modify [`config.toml`](#optional-configuration) if necessary
 - Put your background pictures into the `backgrounds/` directory
 - Setup the automatic execution of the program (you can use the recommended setup below)
@@ -19,13 +19,13 @@ There are two main ways to use this program.
 One of them is to set up a scheduler to execute the program periodically or whenever your PC boots.
 The other option (explained here) is to execute the program everytime the Windows Terminal opens up.
 
-- Copy the full path of the executable into your clipboard (example: `C:\tools\wtgbc\wtgbc.exe`)
+- Copy the full path of the executable into your clipboard (example: `C:\tools\wtbgc\wtbgc.exe`)
 - Open Windows Terminal
 - Go to Settings
 - Create a new profile
 - Click on the Command Line option
 - Set it to `powershell -noexit <path>`, where `<path>` is the directory you have in your clipboard
-    - Surround the path in escaped quotes (`\"`) if it contains any whitespace and prefix it with `&` (example: `powershell -noexit & \"C:\Program Files\wtgbc\wtgbc.exe\"`)
+    - Surround the path in escaped quotes (`\"`) if it contains any whitespace and prefix it with `&` (example: `powershell -noexit & \"C:\Program Files\wtbgc\wtbgc.exe\"`)
     - If using `cmd.exe`, set the command as `cmd /k <path>`
 - Click on Save
 - Go to Startup
@@ -54,9 +54,9 @@ Edit `config.toml` if necessary:
 
 If you want to be able to change the background image on the fly while inside the Windows Terminal,
 it's recommended that you add the executable to your PATH environment variable.
-This will allow you to type `wtgbc` in the terminal to update the image.
+This will allow you to type `wtbgc` in the terminal to update the image.
 
-- Copy the directory of the executable (example: `C:\tools\wtgbc\`)
+- Copy the directory of the executable (example: `C:\tools\wtbgc\`)
 - Press the Windows key
 - Search for "Environment"
 - Select Modify environment variables
