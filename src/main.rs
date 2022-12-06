@@ -33,7 +33,7 @@ fn main() {
     let allowed_extensions = config.extensions;
 
     let mut rng = rand::thread_rng();
-    let mut new_pic = fs::read_dir(pic_dir).expect("No backgrounds folder found!").into_iter()
+    let mut new_pic = fs::read_dir(exe_dir.join(pic_dir)).expect("No backgrounds folder found!").into_iter()
         .map(|path| path.unwrap().path())
         .filter(|path| path.extension().is_some())
         .filter(|path| allowed_extensions.contains(&path.extension().unwrap().to_str().unwrap().to_string()))
