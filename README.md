@@ -83,4 +83,8 @@ This will allow you to type `wtgbc` in the terminal to update the image.
 - Create actual issues :p
 - Improve readability of code
 - Create an option to limit the amount of times the image can change in some time span
+- Dynamic opacity based on max/average brightness of image
+- Command to delete or set current wallpaper image as favorite
+- Image subfolder support
+- CLI arguments to edit config.toml easily
 
