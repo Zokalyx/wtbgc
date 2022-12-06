@@ -11,6 +11,7 @@ The project compiles to an executable that changes the background image everytim
 - Extract the `wtgbc` folder and move it to your desired directory
 - [Optional] Modify [`config.toml`](#optional-configuration) if necessary
 - Put your background pictures into the `backgrounds/` directory
+- Setup the automatic execution of the program (you can use the recommended setup below)
 
 # Recommended setup
 
